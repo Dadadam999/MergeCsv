@@ -59,8 +59,8 @@ namespace MergeCsv
             // 
             this.body.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.body.ColumnCount = 2;
-            this.body.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.body.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.body.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.77551F));
+            this.body.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 81.22449F));
             this.body.Controls.Add(this.label5, 0, 4);
             this.body.Controls.Add(this.label4, 0, 3);
             this.body.Controls.Add(this.label1, 0, 0);
@@ -91,7 +91,7 @@ namespace MergeCsv
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label5.Location = new System.Drawing.Point(4, 105);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(238, 25);
+            this.label5.Size = new System.Drawing.Size(85, 25);
             this.label5.TabIndex = 9;
             this.label5.Text = "Тип слияния";
             // 
@@ -101,7 +101,7 @@ namespace MergeCsv
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label4.Location = new System.Drawing.Point(4, 79);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(238, 25);
+            this.label4.Size = new System.Drawing.Size(85, 25);
             this.label4.TabIndex = 8;
             this.label4.Text = "Ключ 2";
             // 
@@ -111,7 +111,7 @@ namespace MergeCsv
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Location = new System.Drawing.Point(4, 1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(238, 25);
+            this.label1.Size = new System.Drawing.Size(85, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Файл 1";
             // 
@@ -121,7 +121,7 @@ namespace MergeCsv
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Location = new System.Drawing.Point(4, 27);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(238, 25);
+            this.label2.Size = new System.Drawing.Size(85, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Файл 2";
             // 
@@ -131,7 +131,7 @@ namespace MergeCsv
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Location = new System.Drawing.Point(4, 53);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(238, 25);
+            this.label3.Size = new System.Drawing.Size(85, 25);
             this.label3.TabIndex = 2;
             this.label3.Text = "Ключ 1";
             // 
@@ -140,9 +140,9 @@ namespace MergeCsv
             this.panel1.Controls.Add(this.file1);
             this.panel1.Controls.Add(this.selectFile1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(249, 4);
+            this.panel1.Location = new System.Drawing.Point(96, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(238, 19);
+            this.panel1.Size = new System.Drawing.Size(391, 19);
             this.panel1.TabIndex = 3;
             // 
             // file1
@@ -152,13 +152,13 @@ namespace MergeCsv
             this.file1.Location = new System.Drawing.Point(0, 0);
             this.file1.Name = "file1";
             this.file1.ReadOnly = true;
-            this.file1.Size = new System.Drawing.Size(208, 20);
+            this.file1.Size = new System.Drawing.Size(361, 20);
             this.file1.TabIndex = 1;
             // 
             // selectFile1
             // 
             this.selectFile1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.selectFile1.Location = new System.Drawing.Point(208, 0);
+            this.selectFile1.Location = new System.Drawing.Point(361, 0);
             this.selectFile1.Name = "selectFile1";
             this.selectFile1.Size = new System.Drawing.Size(30, 19);
             this.selectFile1.TabIndex = 0;
@@ -171,9 +171,9 @@ namespace MergeCsv
             this.panel2.Controls.Add(this.file2);
             this.panel2.Controls.Add(this.selectFile2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(249, 30);
+            this.panel2.Location = new System.Drawing.Point(96, 30);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(238, 19);
+            this.panel2.Size = new System.Drawing.Size(391, 19);
             this.panel2.TabIndex = 4;
             // 
             // file2
@@ -183,13 +183,13 @@ namespace MergeCsv
             this.file2.Location = new System.Drawing.Point(0, 0);
             this.file2.Name = "file2";
             this.file2.ReadOnly = true;
-            this.file2.Size = new System.Drawing.Size(208, 20);
+            this.file2.Size = new System.Drawing.Size(361, 20);
             this.file2.TabIndex = 2;
             // 
             // selectFile2
             // 
             this.selectFile2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.selectFile2.Location = new System.Drawing.Point(208, 0);
+            this.selectFile2.Location = new System.Drawing.Point(361, 0);
             this.selectFile2.Name = "selectFile2";
             this.selectFile2.Size = new System.Drawing.Size(30, 19);
             this.selectFile2.TabIndex = 0;
@@ -203,9 +203,9 @@ namespace MergeCsv
             this.key1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.key1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.key1.FormattingEnabled = true;
-            this.key1.Location = new System.Drawing.Point(249, 56);
+            this.key1.Location = new System.Drawing.Point(96, 56);
             this.key1.Name = "key1";
-            this.key1.Size = new System.Drawing.Size(238, 21);
+            this.key1.Size = new System.Drawing.Size(391, 21);
             this.key1.TabIndex = 5;
             // 
             // key2
@@ -214,9 +214,9 @@ namespace MergeCsv
             this.key2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.key2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.key2.FormattingEnabled = true;
-            this.key2.Location = new System.Drawing.Point(249, 82);
+            this.key2.Location = new System.Drawing.Point(96, 82);
             this.key2.Name = "key2";
-            this.key2.Size = new System.Drawing.Size(238, 21);
+            this.key2.Size = new System.Drawing.Size(391, 21);
             this.key2.TabIndex = 6;
             // 
             // typeJoin
@@ -230,9 +230,9 @@ namespace MergeCsv
             "LEFT JOIN",
             "RIGHT JOIN",
             "FULL JOIN"});
-            this.typeJoin.Location = new System.Drawing.Point(249, 108);
+            this.typeJoin.Location = new System.Drawing.Point(96, 108);
             this.typeJoin.Name = "typeJoin";
-            this.typeJoin.Size = new System.Drawing.Size(238, 21);
+            this.typeJoin.Size = new System.Drawing.Size(391, 21);
             this.typeJoin.TabIndex = 7;
             // 
             // openFileDialog1
