@@ -29,268 +29,458 @@ namespace MergeCsv
         /// </summary>
         private void InitializeComponent()
         {
-            this.body = new System.Windows.Forms.TableLayoutPanel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
+            this._body = new System.Windows.Forms.TableLayoutPanel();
+            this._encodingView = new System.Windows.Forms.ComboBox();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this._label5 = new System.Windows.Forms.Label();
+            this._label4 = new System.Windows.Forms.Label();
+            this._label1 = new System.Windows.Forms.Label();
+            this._label2 = new System.Windows.Forms.Label();
+            this._label3 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this._fileOne = new System.Windows.Forms.TextBox();
+            this._selectOneFile = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this._fileTwo = new System.Windows.Forms.TextBox();
+            this._selectTwoFile = new System.Windows.Forms.PictureBox();
+            this._keysOne = new System.Windows.Forms.ComboBox();
+            this._keysTwo = new System.Windows.Forms.ComboBox();
+            this._typeJoin = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this._endFolderView = new System.Windows.Forms.TextBox();
+            this._selectEndFolder = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.file1 = new System.Windows.Forms.TextBox();
-            this.selectFile1 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.file2 = new System.Windows.Forms.TextBox();
-            this.selectFile2 = new System.Windows.Forms.Button();
-            this.key1 = new System.Windows.Forms.ComboBox();
-            this.key2 = new System.Windows.Forms.ComboBox();
-            this.typeJoin = new System.Windows.Forms.ComboBox();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.startBtn = new System.Windows.Forms.Button();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this._delimiterFileView = new System.Windows.Forms.NumericUpDown();
+            this._openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this._startBtn = new System.Windows.Forms.Button();
+            this._backgroundWorker = new System.ComponentModel.BackgroundWorker();
             this.bottomBar = new System.Windows.Forms.Panel();
-            this.resultView = new System.Windows.Forms.Label();
-            this.body.SuspendLayout();
+            this._resultView = new System.Windows.Forms.Label();
+            this._folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
+            this._body.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._selectOneFile)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._selectTwoFile)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._selectEndFolder)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._delimiterFileView)).BeginInit();
             this.bottomBar.SuspendLayout();
             this.SuspendLayout();
             // 
-            // body
+            // _body
             // 
-            this.body.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.body.ColumnCount = 2;
-            this.body.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.77551F));
-            this.body.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 81.22449F));
-            this.body.Controls.Add(this.label5, 0, 4);
-            this.body.Controls.Add(this.label4, 0, 3);
-            this.body.Controls.Add(this.label1, 0, 0);
-            this.body.Controls.Add(this.label2, 0, 1);
-            this.body.Controls.Add(this.label3, 0, 2);
-            this.body.Controls.Add(this.panel1, 1, 0);
-            this.body.Controls.Add(this.panel2, 1, 1);
-            this.body.Controls.Add(this.key1, 1, 2);
-            this.body.Controls.Add(this.key2, 1, 3);
-            this.body.Controls.Add(this.typeJoin, 1, 4);
-            this.body.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.body.Location = new System.Drawing.Point(0, 0);
-            this.body.Name = "body";
-            this.body.RowCount = 6;
-            this.body.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.body.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.body.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.body.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.body.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.body.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.body.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.body.Size = new System.Drawing.Size(491, 134);
-            this.body.TabIndex = 0;
+            this._body.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this._body.ColumnCount = 2;
+            this._body.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.61225F));
+            this._body.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.38775F));
+            this._body.Controls.Add(this._encodingView, 1, 8);
+            this._body.Controls.Add(this.panel8, 0, 10);
+            this._body.Controls.Add(this.panel9, 0, 10);
+            this._body.Controls.Add(this.panel6, 0, 7);
+            this._body.Controls.Add(this.panel7, 1, 7);
+            this._body.Controls.Add(this._label5, 0, 6);
+            this._body.Controls.Add(this._label4, 0, 5);
+            this._body.Controls.Add(this._label1, 0, 0);
+            this._body.Controls.Add(this._label2, 0, 1);
+            this._body.Controls.Add(this._label3, 0, 4);
+            this._body.Controls.Add(this.panel1, 1, 0);
+            this._body.Controls.Add(this.panel2, 1, 1);
+            this._body.Controls.Add(this._keysOne, 1, 4);
+            this._body.Controls.Add(this._keysTwo, 1, 5);
+            this._body.Controls.Add(this._typeJoin, 1, 6);
+            this._body.Controls.Add(this.label1, 0, 2);
+            this._body.Controls.Add(this.panel3, 1, 2);
+            this._body.Controls.Add(this.panel4, 1, 3);
+            this._body.Controls.Add(this.panel5, 0, 3);
+            this._body.Controls.Add(this.label2, 0, 8);
+            this._body.Controls.Add(this.label3, 0, 9);
+            this._body.Controls.Add(this._delimiterFileView, 1, 9);
+            this._body.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._body.Location = new System.Drawing.Point(0, 0);
+            this._body.Name = "_body";
+            this._body.RowCount = 11;
+            this._body.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this._body.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this._body.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this._body.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 5F));
+            this._body.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this._body.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this._body.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this._body.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 5F));
+            this._body.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this._body.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this._body.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this._body.Size = new System.Drawing.Size(491, 227);
+            this._body.TabIndex = 0;
             // 
-            // label5
+            // _encodingView
             // 
-            this.label5.AutoSize = true;
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(4, 105);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 25);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Тип слияния";
+            this._encodingView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._encodingView.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this._encodingView.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this._encodingView.FormattingEnabled = true;
+            this._encodingView.Items.AddRange(new object[] {
+            "UTF8",
+            "ANSI"});
+            this._encodingView.Location = new System.Drawing.Point(105, 172);
+            this._encodingView.Name = "_encodingView";
+            this._encodingView.Size = new System.Drawing.Size(382, 21);
+            this._encodingView.TabIndex = 20;
             // 
-            // label4
+            // panel8
             // 
-            this.label4.AutoSize = true;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(4, 79);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 25);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Ключ 2";
+            this.panel8.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel8.Location = new System.Drawing.Point(1, 221);
+            this.panel8.Margin = new System.Windows.Forms.Padding(0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(100, 25);
+            this.panel8.TabIndex = 16;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel9.Location = new System.Drawing.Point(102, 221);
+            this.panel9.Margin = new System.Windows.Forms.Padding(0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(388, 25);
+            this.panel9.TabIndex = 17;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.Location = new System.Drawing.Point(1, 163);
+            this.panel6.Margin = new System.Windows.Forms.Padding(0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(100, 5);
+            this.panel6.TabIndex = 14;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel7.Location = new System.Drawing.Point(102, 163);
+            this.panel7.Margin = new System.Windows.Forms.Padding(0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(388, 5);
+            this.panel7.TabIndex = 15;
+            // 
+            // _label5
+            // 
+            this._label5.AutoSize = true;
+            this._label5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._label5.Location = new System.Drawing.Point(4, 137);
+            this._label5.Name = "_label5";
+            this._label5.Size = new System.Drawing.Size(94, 25);
+            this._label5.TabIndex = 9;
+            this._label5.Text = "Тип слияния";
+            // 
+            // _label4
+            // 
+            this._label4.AutoSize = true;
+            this._label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._label4.Location = new System.Drawing.Point(4, 111);
+            this._label4.Name = "_label4";
+            this._label4.Size = new System.Drawing.Size(94, 25);
+            this._label4.TabIndex = 8;
+            this._label4.Text = "Ключ 2";
+            // 
+            // _label1
+            // 
+            this._label1.AutoSize = true;
+            this._label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._label1.Location = new System.Drawing.Point(4, 1);
+            this._label1.Name = "_label1";
+            this._label1.Size = new System.Drawing.Size(94, 25);
+            this._label1.TabIndex = 0;
+            this._label1.Text = "Файл 1";
+            // 
+            // _label2
+            // 
+            this._label2.AutoSize = true;
+            this._label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._label2.Location = new System.Drawing.Point(4, 27);
+            this._label2.Name = "_label2";
+            this._label2.Size = new System.Drawing.Size(94, 25);
+            this._label2.TabIndex = 1;
+            this._label2.Text = "Файл 2";
+            // 
+            // _label3
+            // 
+            this._label3.AutoSize = true;
+            this._label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._label3.Location = new System.Drawing.Point(4, 85);
+            this._label3.Name = "_label3";
+            this._label3.Size = new System.Drawing.Size(94, 25);
+            this._label3.TabIndex = 2;
+            this._label3.Text = "Ключ 1";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this._fileOne);
+            this.panel1.Controls.Add(this._selectOneFile);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(105, 4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(382, 19);
+            this.panel1.TabIndex = 3;
+            // 
+            // _fileOne
+            // 
+            this._fileOne.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this._fileOne.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._fileOne.Location = new System.Drawing.Point(0, 0);
+            this._fileOne.Name = "_fileOne";
+            this._fileOne.ReadOnly = true;
+            this._fileOne.Size = new System.Drawing.Size(360, 13);
+            this._fileOne.TabIndex = 1;
+            // 
+            // _selectOneFile
+            // 
+            this._selectOneFile.Dock = System.Windows.Forms.DockStyle.Right;
+            this._selectOneFile.Image = ((System.Drawing.Image)(resources.GetObject("_selectOneFile.Image")));
+            this._selectOneFile.Location = new System.Drawing.Point(360, 0);
+            this._selectOneFile.Name = "_selectOneFile";
+            this._selectOneFile.Size = new System.Drawing.Size(22, 19);
+            this._selectOneFile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this._selectOneFile.TabIndex = 2;
+            this._selectOneFile.TabStop = false;
+            this._selectOneFile.Click += new System.EventHandler(this.SelectFileOneClick);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this._fileTwo);
+            this.panel2.Controls.Add(this._selectTwoFile);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(105, 30);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(382, 19);
+            this.panel2.TabIndex = 4;
+            // 
+            // _fileTwo
+            // 
+            this._fileTwo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this._fileTwo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._fileTwo.Location = new System.Drawing.Point(0, 0);
+            this._fileTwo.Name = "_fileTwo";
+            this._fileTwo.ReadOnly = true;
+            this._fileTwo.Size = new System.Drawing.Size(360, 13);
+            this._fileTwo.TabIndex = 2;
+            // 
+            // _selectTwoFile
+            // 
+            this._selectTwoFile.Dock = System.Windows.Forms.DockStyle.Right;
+            this._selectTwoFile.Image = ((System.Drawing.Image)(resources.GetObject("_selectTwoFile.Image")));
+            this._selectTwoFile.Location = new System.Drawing.Point(360, 0);
+            this._selectTwoFile.Name = "_selectTwoFile";
+            this._selectTwoFile.Size = new System.Drawing.Size(22, 19);
+            this._selectTwoFile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this._selectTwoFile.TabIndex = 3;
+            this._selectTwoFile.TabStop = false;
+            this._selectTwoFile.Click += new System.EventHandler(this.SelectFileTwoClick);
+            // 
+            // _keysOne
+            // 
+            this._keysOne.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._keysOne.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this._keysOne.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this._keysOne.FormattingEnabled = true;
+            this._keysOne.Location = new System.Drawing.Point(105, 88);
+            this._keysOne.Name = "_keysOne";
+            this._keysOne.Size = new System.Drawing.Size(382, 21);
+            this._keysOne.TabIndex = 5;
+            // 
+            // _keysTwo
+            // 
+            this._keysTwo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._keysTwo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this._keysTwo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this._keysTwo.FormattingEnabled = true;
+            this._keysTwo.Location = new System.Drawing.Point(105, 114);
+            this._keysTwo.Name = "_keysTwo";
+            this._keysTwo.Size = new System.Drawing.Size(382, 21);
+            this._keysTwo.TabIndex = 6;
+            // 
+            // _typeJoin
+            // 
+            this._typeJoin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._typeJoin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this._typeJoin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this._typeJoin.FormattingEnabled = true;
+            this._typeJoin.Items.AddRange(new object[] {
+            "INNER JOIN",
+            "LEFT JOIN",
+            "RIGHT JOIN",
+            "FULL JOIN"});
+            this._typeJoin.Location = new System.Drawing.Point(105, 140);
+            this._typeJoin.Name = "_typeJoin";
+            this._typeJoin.Size = new System.Drawing.Size(382, 21);
+            this._typeJoin.TabIndex = 7;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(4, 1);
+            this.label1.Location = new System.Drawing.Point(4, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Файл 1";
+            this.label1.Size = new System.Drawing.Size(94, 25);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Конечная папка";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this._endFolderView);
+            this.panel3.Controls.Add(this._selectEndFolder);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(105, 56);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(382, 19);
+            this.panel3.TabIndex = 11;
+            // 
+            // _endFolderView
+            // 
+            this._endFolderView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this._endFolderView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._endFolderView.Location = new System.Drawing.Point(0, 0);
+            this._endFolderView.Name = "_endFolderView";
+            this._endFolderView.ReadOnly = true;
+            this._endFolderView.Size = new System.Drawing.Size(360, 13);
+            this._endFolderView.TabIndex = 2;
+            // 
+            // _selectEndFolder
+            // 
+            this._selectEndFolder.Dock = System.Windows.Forms.DockStyle.Right;
+            this._selectEndFolder.Image = ((System.Drawing.Image)(resources.GetObject("_selectEndFolder.Image")));
+            this._selectEndFolder.Location = new System.Drawing.Point(360, 0);
+            this._selectEndFolder.Name = "_selectEndFolder";
+            this._selectEndFolder.Size = new System.Drawing.Size(22, 19);
+            this._selectEndFolder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this._selectEndFolder.TabIndex = 3;
+            this._selectEndFolder.TabStop = false;
+            this._selectEndFolder.Click += new System.EventHandler(this.SelectEndFolderClick);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(102, 79);
+            this.panel4.Margin = new System.Windows.Forms.Padding(0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(388, 5);
+            this.panel4.TabIndex = 12;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(1, 79);
+            this.panel5.Margin = new System.Windows.Forms.Padding(0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(100, 5);
+            this.panel5.TabIndex = 13;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(4, 27);
+            this.label2.Location = new System.Drawing.Point(4, 169);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 25);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Файл 2";
+            this.label2.Size = new System.Drawing.Size(62, 13);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Кодировка";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(4, 53);
+            this.label3.Location = new System.Drawing.Point(4, 195);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 25);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Ключ 1";
+            this.label3.Size = new System.Drawing.Size(78, 13);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Разбить файл";
             // 
-            // panel1
+            // _delimiterFileView
             // 
-            this.panel1.Controls.Add(this.file1);
-            this.panel1.Controls.Add(this.selectFile1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(96, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(391, 19);
-            this.panel1.TabIndex = 3;
+            this._delimiterFileView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._delimiterFileView.Location = new System.Drawing.Point(105, 198);
+            this._delimiterFileView.Maximum = new decimal(new int[] {
+            99999999,
+            0,
+            0,
+            0});
+            this._delimiterFileView.Name = "_delimiterFileView";
+            this._delimiterFileView.Size = new System.Drawing.Size(382, 20);
+            this._delimiterFileView.TabIndex = 21;
             // 
-            // file1
+            // _openFileDialog
             // 
-            this.file1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.file1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.file1.Location = new System.Drawing.Point(0, 0);
-            this.file1.Name = "file1";
-            this.file1.ReadOnly = true;
-            this.file1.Size = new System.Drawing.Size(361, 20);
-            this.file1.TabIndex = 1;
+            this._openFileDialog.Filter = "csv files (*.csv)|*.csv";
             // 
-            // selectFile1
+            // _startBtn
             // 
-            this.selectFile1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.selectFile1.Location = new System.Drawing.Point(361, 0);
-            this.selectFile1.Name = "selectFile1";
-            this.selectFile1.Size = new System.Drawing.Size(30, 19);
-            this.selectFile1.TabIndex = 0;
-            this.selectFile1.Text = "...";
-            this.selectFile1.UseVisualStyleBackColor = true;
-            this.selectFile1.Click += new System.EventHandler(this.selectFile1_Click);
+            this._startBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this._startBtn.Location = new System.Drawing.Point(0, 0);
+            this._startBtn.Name = "_startBtn";
+            this._startBtn.Size = new System.Drawing.Size(491, 23);
+            this._startBtn.TabIndex = 1;
+            this._startBtn.Text = "Пуск";
+            this._startBtn.UseVisualStyleBackColor = true;
+            this._startBtn.Click += new System.EventHandler(this.startBtn_Click);
             // 
-            // panel2
+            // _backgroundWorker
             // 
-            this.panel2.Controls.Add(this.file2);
-            this.panel2.Controls.Add(this.selectFile2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(96, 30);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(391, 19);
-            this.panel2.TabIndex = 4;
-            // 
-            // file2
-            // 
-            this.file2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.file2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.file2.Location = new System.Drawing.Point(0, 0);
-            this.file2.Name = "file2";
-            this.file2.ReadOnly = true;
-            this.file2.Size = new System.Drawing.Size(361, 20);
-            this.file2.TabIndex = 2;
-            // 
-            // selectFile2
-            // 
-            this.selectFile2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.selectFile2.Location = new System.Drawing.Point(361, 0);
-            this.selectFile2.Name = "selectFile2";
-            this.selectFile2.Size = new System.Drawing.Size(30, 19);
-            this.selectFile2.TabIndex = 0;
-            this.selectFile2.Text = "...";
-            this.selectFile2.UseVisualStyleBackColor = true;
-            this.selectFile2.Click += new System.EventHandler(this.selectFile2_Click);
-            // 
-            // key1
-            // 
-            this.key1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.key1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.key1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.key1.FormattingEnabled = true;
-            this.key1.Location = new System.Drawing.Point(96, 56);
-            this.key1.Name = "key1";
-            this.key1.Size = new System.Drawing.Size(391, 21);
-            this.key1.TabIndex = 5;
-            // 
-            // key2
-            // 
-            this.key2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.key2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.key2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.key2.FormattingEnabled = true;
-            this.key2.Location = new System.Drawing.Point(96, 82);
-            this.key2.Name = "key2";
-            this.key2.Size = new System.Drawing.Size(391, 21);
-            this.key2.TabIndex = 6;
-            // 
-            // typeJoin
-            // 
-            this.typeJoin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.typeJoin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.typeJoin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.typeJoin.FormattingEnabled = true;
-            this.typeJoin.Items.AddRange(new object[] {
-            "INNER JOIN",
-            "LEFT JOIN",
-            "RIGHT JOIN",
-            "FULL JOIN"});
-            this.typeJoin.Location = new System.Drawing.Point(96, 108);
-            this.typeJoin.Name = "typeJoin";
-            this.typeJoin.Size = new System.Drawing.Size(391, 21);
-            this.typeJoin.TabIndex = 7;
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.Filter = "csv files (*.csv)|*.csv";
-            // 
-            // startBtn
-            // 
-            this.startBtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.startBtn.Location = new System.Drawing.Point(0, 0);
-            this.startBtn.Name = "startBtn";
-            this.startBtn.Size = new System.Drawing.Size(491, 23);
-            this.startBtn.TabIndex = 1;
-            this.startBtn.Text = "Пуск";
-            this.startBtn.UseVisualStyleBackColor = true;
-            this.startBtn.Click += new System.EventHandler(this.startBtn_Click);
-            // 
-            // backgroundWorker1
-            // 
-            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
-            this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
+            this._backgroundWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.RunWorkerCompleted);
             // 
             // bottomBar
             // 
-            this.bottomBar.Controls.Add(this.resultView);
-            this.bottomBar.Controls.Add(this.startBtn);
+            this.bottomBar.Controls.Add(this._resultView);
+            this.bottomBar.Controls.Add(this._startBtn);
             this.bottomBar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.bottomBar.Location = new System.Drawing.Point(0, 134);
+            this.bottomBar.Location = new System.Drawing.Point(0, 227);
             this.bottomBar.Name = "bottomBar";
             this.bottomBar.Size = new System.Drawing.Size(491, 40);
             this.bottomBar.TabIndex = 2;
             // 
-            // resultView
+            // _resultView
             // 
-            this.resultView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.resultView.Location = new System.Drawing.Point(0, 23);
-            this.resultView.Name = "resultView";
-            this.resultView.Size = new System.Drawing.Size(491, 17);
-            this.resultView.TabIndex = 2;
-            this.resultView.Text = "Готов к работе";
+            this._resultView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._resultView.Location = new System.Drawing.Point(0, 23);
+            this._resultView.Name = "_resultView";
+            this._resultView.Size = new System.Drawing.Size(491, 17);
+            this._resultView.TabIndex = 2;
+            this._resultView.Text = "Готов к работе";
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 174);
-            this.Controls.Add(this.body);
+            this.ClientSize = new System.Drawing.Size(491, 267);
+            this.Controls.Add(this._body);
             this.Controls.Add(this.bottomBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Main";
             this.Text = "Слияние CSV файлов";
-            this.body.ResumeLayout(false);
-            this.body.PerformLayout();
+            this._body.ResumeLayout(false);
+            this._body.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._selectOneFile)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._selectTwoFile)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._selectEndFolder)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._delimiterFileView)).EndInit();
             this.bottomBar.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -298,26 +488,41 @@ namespace MergeCsv
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel body;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TableLayoutPanel _body;
+        private System.Windows.Forms.Label _label5;
+        private System.Windows.Forms.Label _label4;
+        private System.Windows.Forms.Label _label1;
+        private System.Windows.Forms.Label _label2;
+        private System.Windows.Forms.Label _label3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox key1;
-        private System.Windows.Forms.ComboBox key2;
-        private System.Windows.Forms.ComboBox typeJoin;
-        private System.Windows.Forms.TextBox file1;
-        private System.Windows.Forms.Button selectFile1;
-        private System.Windows.Forms.TextBox file2;
-        private System.Windows.Forms.Button selectFile2;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Button startBtn;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.ComboBox _keysOne;
+        private System.Windows.Forms.ComboBox _keysTwo;
+        private System.Windows.Forms.ComboBox _typeJoin;
+        private System.Windows.Forms.TextBox _fileOne;
+        private System.Windows.Forms.TextBox _fileTwo;
+        private System.Windows.Forms.OpenFileDialog _openFileDialog;
+        private System.Windows.Forms.Button _startBtn;
+        private System.ComponentModel.BackgroundWorker _backgroundWorker;
         private System.Windows.Forms.Panel bottomBar;
-        private System.Windows.Forms.Label resultView;
+        private System.Windows.Forms.Label _resultView;
+        private System.Windows.Forms.PictureBox _selectOneFile;
+        private System.Windows.Forms.PictureBox _selectTwoFile;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.TextBox _endFolderView;
+        private System.Windows.Forms.PictureBox _selectEndFolder;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox _encodingView;
+        private System.Windows.Forms.NumericUpDown _delimiterFileView;
+        private System.Windows.Forms.FolderBrowserDialog _folderBrowserDialog;
     }
 }
 

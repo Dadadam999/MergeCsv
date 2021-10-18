@@ -6,6 +6,13 @@ using System.Windows.Forms;
 
 namespace MergeCsv
 {
+    public enum Join : int 
+    {
+        Inner,
+        Left,
+        Right,
+        Full
+    }
     static class Program
     {
         /// <summary>
