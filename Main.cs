@@ -16,6 +16,11 @@ namespace MergeCsv
         public Main() 
         { 
             InitializeComponent();
+
+            // Установите режим автоматического масштабирования для DPI
+            AutoScaleDimensions = new System.Drawing.SizeF( 96F, 96F );
+            AutoScaleMode = AutoScaleMode.Dpi;
+
             _typeJoin.SelectedIndex = 1;
             _encodingView.SelectedIndex = 0;
             _endFolderView.Text = _endFolder;
